@@ -6,7 +6,7 @@ import Head from './Head'
 const Contato = () => {
   return (
     <section className={`${styles.contato} animeLeft`}>
-      <Head title="Aj | Contato" description="Entre em contato"/>
+      <Head title="Aislan | Contato" description="Entre em contato"/>
       <img src={foto} alt="Máquina de Escrever" />
       <div>
         <h1>Entre em contato</h1>
