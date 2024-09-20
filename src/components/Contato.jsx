@@ -1,11 +1,23 @@
 import React from 'react'
 import styles from './Contato.module.css'
+import foto from '../img/contato.jpg'
+import Head from './Head'
 
 const Contato = () => {
   return (
-    <div>
-        <h1>Contato</h1>
-    </div>
+    <section className={`${styles.contato} animeLeft`}>
+      <Head title="Aj | Contato" description="Entre em contato"/>
+      <img src={foto} alt="Máquina de Escrever" />
+      <div>
+        <h1>Entre em contato</h1>
+        <ul className={styles.dados}>
+          <li>aislandnjunior@gmail.com</li>
+          <li>+81 98789-1768</li>
+          <li>Recife</li>
+        </ul>
+      </div>
+        
+    </section>
   )
 }
 
