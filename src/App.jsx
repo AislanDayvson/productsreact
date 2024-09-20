@@ -1,23 +1,24 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.css'
 import Produtos from './components/Produtos'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Contato from './components/Contato'
 
 const App = () => {
   return (
-    <div>
-      
+    <div className='App'>
       <BrowserRouter>
         <Header />
-        
-        <Routes>
-          <Route path='/' element={<Produtos />}/>
-        </Routes> 
-
+        <div className='content'>
+          <Routes>
+            <Route path='/' element={<Produtos />}/>
+            <Route path='contato' element={<Contato />}/>
+          </Routes> 
+        </div>
         <Footer />
       </BrowserRouter>
-     
     </div>
   )
 }
